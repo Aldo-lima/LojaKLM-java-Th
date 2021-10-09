@@ -1,0 +1,170 @@
+<div th:replace="comum/header"></div>
+<div class="container-fluid">
+	<form method="POST">
+		<div class="card" id="card1">
+			<div class="card-header">
+				Cadastrar Fornecedor
+			</div>
+			<div class="card-body">
+
+
+				<div class=row>
+
+					<div class="col-3">
+						<label for="disabledSelect" class="form-label">Categoria</label>
+						<select id="disabledSelect" class="form-select" name="categoria_id">
+							<option value="1">
+								valor
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-6">
+						<label for="disabledTextInput" class="form-label">Nome Fantasia:</label>
+						<input type="text" class="form-control" placeholder="Nnome fantasia" name="nome">
+					</div>
+					<div class=" col-6">
+						<label for="disabledTextInput" class="form-label">Nome Razão Social:</label>
+						<input type="text" class="form-control" placeholder="Disabled input" name="nome_r">
+					</div>
+					<div class=" col-6">
+						<label for="disabledTextInput" class="form-label">CNPJ:</label>
+						<input type="text" class="form-control" placeholder="Disabled input" name="cnpj">
+					</div>
+					<div class=" col-6">
+						<label for="disabledTextInput" class="form-label">Iscrição estadual:</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="insc_esta">
+					</div>
+				</div>
+			</div>
+
+			</fieldset>
+
+		</div>
+
+
+
+		<div class="card" id="card2">
+			<div class="card-header">
+				Contato
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Nome</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="nome_contato">
+					</div>
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Telefone</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="telefone">
+					</div>
+
+
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Email</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="email">
+					</div>
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">cargo</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="cargo">
+					</div>
+
+					<div class="col-4">
+						<label for="disabledSelect" class="form-label">Tipo</label>
+						<select id="disabledSelect" class="form-select" name="telefone_tipo">
+							<option>Particular</option>
+							<option>Comercial</option>
+						</select>
+					</div>
+
+					<div class="col-4">
+						<label for="disabledSelect" class="form-label">Tipo</label>
+						<select id="disabledSelect" class="form-select" name="email_tipo">
+							<option>Particular</option>
+							<option>Comercial</option>
+						</select>
+						<br><br>
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+
+			</fieldset>
+
+		</div>
+
+
+		<div class="card" id="card3">
+			<div class="card-header">
+				Endereço
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class=" col-2">
+						<label for="disabledTextInput" class="form-label">CEP</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="cep">
+					</div>
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Rua</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="rua">
+					</div>
+
+
+					<div class=" col-3">
+						<label for="disabledTextInput" class="form-label">Número</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="numero">
+					</div>
+					<div class=" col-3">
+						<label for="disabledTextInput" class="form-label">Bairro</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="bairro">
+					</div>
+
+
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Cidade</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="cidade">
+					</div>
+
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Prosimidade</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="estado">
+					</div>
+
+					<div class=" col-4">
+						<label for="disabledTextInput" class="form-label">Complemento</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+							name="Complemento">
+					</div>
+
+				</div><br>
+				<div class="row">
+					<div class=col>
+						<button type="submit" class="btn btn-outline-primary">Salvar</button>
+						<a type="button" class="btn btn-outline-warning">Cancelar</a>
+					</div>
+				</div> <br><br>
+
+			</div>
+
+			</fieldset>
+		</div>
+
+	</form>
+</div>
+<div th:replace="comum/footer"></div>

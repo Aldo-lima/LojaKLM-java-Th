@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<body>
+
+	<h1> Evento</h1>
+	<h3><a href="/cadastrarEvento">cadastrar Evento</a></h3>
+	<div th:each="evento : ${evento}">
+		<div class="row">
+
+			<p> <span th:text="${evento.nome}"></span></p>
+			<p> <span th:text="${evento.local}"></span></p>
+			<p> <span th:text="${evento.data}"></span></p>
+			<p> <span th:text="${evento.horario}"></span></p>
+		</div>
+	</div><br>
+	
+	  <form method="GET">
+	  Nome:<input type="text" value="" name="nomecovidado"/><br><br>
+	  rg:<input type="text" value="" name="rg"/><br><br>
+	  <button type="submit">Add </button>
+	  </form><br>
+	      <h2>Convidado do evento</h2>
+	  <div th:each="convidado: ${convidados}">
+	     <p><span th:text="${convidado.nomecovidado}"></span></p>
+	     <p><span th:text="${convidado.rg}"></span></p><br>
+	  </div>
+</body>
+<script>
+	window.console.log(eventos);
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+<div th:replace="comum/header"></div>
+<div class="container-fluid">
+	<div class="card" id="card1">
+		<div class="card-header">
+			Detalhes Produto
+		</div>
+		<div class="card-body">
+			<div th:each="produto : ${produto}">
+				<div class="row">
+					<div class="col-4">
+						<span>Nome:</span>
+					</div>
+					
+					<div class="col-4">
+						<span>Codigo:</span>
+					</div>
+					
+					<div class="col-4">
+						<span>Unidade de Medida:</span>
+					</div>
+					
+					<div class="col-4">
+						<span th:text="${produto.name}"></span>
+					</div>
+					<div class="col-4">
+						<span th:text="${produto.id}"></span>
+					</div>
+					<div class="col-4">
+						<span th:text="${produto.Unidade_medida}"></span>
+					</div>
+					<div class="col-4">
+						<span>Quantidade na embalagem:</span>
+					</div>
+					<div class="col-4">
+						<span>preço:</span>
+					</div>
+					<div class="col-4">
+						<span></span>
+					</div>
+					<div class="col-4">
+						<span th:text="${produto.quantidade_embalagem}"></span>
+					</div>
+					<div class="col-4">
+						<span th:text="${produto.price}"></span>
+					</div>
+                    				
+														
+
+				</div>
+			</div>
+
+		</div>
+
+		<div th:replace="comum/footer"></div>

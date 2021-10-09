@@ -1,0 +1,166 @@
+<div th:replace="comum/header"></div>
+<div class="card" id="card1">
+	<div class="card-header">
+		Detalhes Fornecedor
+	</div>
+
+	<div class="card-body">
+		<div th:each="fornecedor : ${fornecedor}">
+			<div class="row">
+				<div class"col">
+					<span>Categoria:</span>
+				</div>
+				<div class="col">
+					<span th:text="${fornecedor.categoria.nome}"></span>
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-6">
+					<span> Nome Fantasia:</span>
+				</div>
+				<div class="col-6">
+					<span> Nome Razão Social:</span>
+				</div>
+
+				<div class="col-6">
+					<span th:text="${fornecedor.nome}"></span>
+				</div>
+				<div class="col-6">
+					<span th:text="${fornecedor.nome_r}"></span>
+				</div>
+				<div class="col-12"></div>
+				<div class="col-6">
+					<span>CNPJ:</span>
+				</div>
+				<div class="col-6">
+					<span>Inscrição Esatadual:</span>
+				</div>
+
+
+
+				<div class="col-6">
+					<span th:text="${fornecedor.cnpj}"></span>
+				</div>
+				<div class="col-6">
+					<span th:text="${fornecedor.insc_esta}"></span>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+<div class="card" id="carddetalhes">
+	<div class="card-header">
+		Contato
+	</div>
+	<div class="card-body">
+		<div class="row">
+			<div class="col-4">
+				<span> Nome:</span>
+			</div>
+			<div class="col-4">
+				<span> Telefone:</span>
+			</div>
+
+			<div class="col-4">
+				<span>Email:</span>
+			</div>
+
+			<div class="col-4">
+				<span th:text="${fornecedor.nome_contato}"></span>
+			</div>
+			<div class="col-4">
+				<span th:text="${fornecedor.telefone}"></span>
+			</div>
+
+			<div class="col-4">
+				<span th:text="${fornecedor.email}"></span>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-4">
+				<span> cargo</span>
+			</div>
+			<div class="col-4">
+				<span> Telefone:</span>
+			</div>
+
+			<div class="col-4">
+				<span>Email:</span>
+			</div>
+
+			<div class="col-4">
+				<span th:text="${fornecedor.cargo}"></span>
+			</div>
+			<div class="col-4">
+				<span th:text="${fornecedor.telefone_tipo}"></span>
+			</div>
+
+			<div class="col-4">
+				<span th:text="${fornecedor.email_tipo}"></span>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="card" id="detalhes_endereco">
+	<div class="card-header">
+		Endereço
+	</div>
+	<div class="card-body">
+		<div class="row">
+			<div class=" col-2">
+				<label for="disabledTextInput" class="form-label">CEP</label><br>
+				<span th:text="${fornecedor.cep}"></span>
+				</div>
+			<div class=" col-4">
+				<label for="disabledTextInput" class="form-label">Rua</label><br>
+				<span th:text="${fornecedor.rua}"></span>
+			</div>
+
+
+			<div class=" col-3">
+				<label for="disabledTextInput" class="form-label">Número</label><br>
+				
+					<span th:text="${fornecedor.numero}"></span>
+			</div>
+			<div class=" col-3">
+				<label for="disabledTextInput" class="form-label">Bairro</label><br>
+				<span th:text="${fornecedor.bairro}"></span>				
+			</div>
+            <div class="col-12">""</div>
+
+			<div class=" col-4">
+				<label for="disabledTextInput" class="form-label">Cidade</label><br>
+				<span th:text="${fornecedor.cidade}"></span>
+					
+			</div>
+
+			<div class=" col-4">
+				<label for="disabledTextInput" class="form-label">Proximidade</label><br>
+				<span th:text="${fornecedor.proximidade}"></span>
+				
+			</div>
+
+			<div class=" col-4">
+				<label for="disabledTextInput" class="form-label">Complemento</label><br>
+				<span th:text="${fornecedor.complemento}"></span>
+					
+			</div>
+
+		</div><br>
+	</div>
+</div>
+</div>
+
+
+
+
+<div th:replace="comum/footer"></div>
