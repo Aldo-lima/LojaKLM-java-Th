@@ -19,7 +19,7 @@ public class Categoria  implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private long id;
 	private String nome;
 	
@@ -31,10 +31,17 @@ public class Categoria  implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Categoria(String nome) {
+
+	
+
+	public Categoria(long id, String nome) {
 		super();
+		this.id = id ;
 		this.nome = nome;
 	}
+
+
+
 	public long getId() {
 		return id;
 	}

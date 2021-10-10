@@ -55,12 +55,6 @@ public class Fornecedor implements Serializable {
 
 
 	
-
-
-	
-
-
-
 	public Fornecedor(long id, String nome, String nome_r, String cnpj, String insc_esta, String nome_contato,
 			String cargo, String telefone, String telefone_tipo, String email, String email_tipo, String rua,
 			String numero, String complemento, String bairro, String cidade, String estado, String proximidade,
