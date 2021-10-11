@@ -73,11 +73,7 @@ public class DBService {
 		
 		
 		
-		
-		
-		
-		
-		
+				
 		
 		categoriaEpository.saveAll(Arrays.asList(cat1,cat2,cat3,cat4,cat5, cat6));
 		fornecedorRepository.saveAll(Arrays.asList(forn1, forn2, forn3, forn4, forn5, forn6, forn7, forn8 ));
