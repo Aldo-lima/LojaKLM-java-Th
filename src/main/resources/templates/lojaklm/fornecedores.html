@@ -16,9 +16,9 @@
 		<tbody>
 			<tr th:each="fornecedor : ${fornecedores}">
 				<th scope="row"><span th:text="${fornecedor.id}"></span></th>
-				<td><span th:text="${fornecedor.nome}"></td>
+				<td><span th:text="${fornecedor.nome}"></span></td>
 				<td>
-					<span th:text="${fornecedor.categoria.nome}">
+				<span th:text="${fornecedor.categoria.nome}"></span>	
 
 				</td>
 				<td>

@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.LojasKlm.models.Fornecedor;
 
-public interface FornecedorRepository  extends  JpaRepository< Fornecedor, Long>{
+public interface FornecedorRepository  extends  JpaRepository< Fornecedor, Integer>{
 
 	
 	

@@ -1,0 +1,57 @@
+<div th:replace="comum/header"></div>
+<div class="container-fluid">
+
+	<div class="card" id="card1">
+		<div class="card-header">
+			Nova Categoria
+		</div>
+		<div class="card-body">
+			<form method="POST">
+
+
+				<div class="row">
+					<div class="col-3">
+						<div class="mb-3">
+							<label for="disabledSelect" class="form-label">Fornecedor</label>
+							<select id="disabledSelect" class="form-select">
+								<option>Disabled select</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<label for="disabledTextInput" class="form-label">Nome:</label>
+						<input type="text" name="name" class="form-control" placeholder="Disabled input">
+					</div>
+
+					<div class="col-3">
+						<label for="disabledSelect" class="form-label">Unidade de Medida:</label>
+						<select id="disabledSelect" name="Unidade_medida" class="form-select">
+							<option>Unidade</option>
+							<option>Kilo</option>
+							<option>Litra</option>
+						</select>
+					</div>
+
+					<div class="col-3">
+						<label for="disabledTextInput" class="form-label">Quantidade na Embalegem</label>
+						<input type="text" id="disabledTextInput" name="quantidade_embalagem" class="form-control" placeholder="Disabled input">
+					</div>
+
+					<div class="col-3">
+						<label for="disabledTextInput" class="form-label">Preço</label>
+						<input type="text" id="disabledTextInput" name="price" placeholder="Disabled input">
+					</div>
+
+					<div class="col-6">
+						<label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+						<textarea class="form-control" name="descricao"  id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div><br>
+				<button type="submit" class="btn btn-outline-primary">Salvar</button>
+				<a th:href="@{/produtos}" type="button" class="btn btn-outline-warning">Cancelar</a>
+			</form>
+		</div>
+	</div>
+	<div th:replace="comum/footer"></div>

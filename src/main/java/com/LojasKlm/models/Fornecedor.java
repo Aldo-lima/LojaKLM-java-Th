@@ -19,7 +19,7 @@ public class Fornecedor implements Serializable {
 	private static final long serialVersionUID = 1L;
 	   @Id
 	   @GeneratedValue(strategy = GenerationType.AUTO)
-	   private long id;
+	   private Integer id;
 	   private String nome;
 	   private String nome_r;
 	   private String cnpj;
@@ -54,8 +54,7 @@ public class Fornecedor implements Serializable {
 	}
 
 
-	
-	public Fornecedor(long id, String nome, String nome_r, String cnpj, String insc_esta, String nome_contato,
+	public Fornecedor(Integer id, String nome, String nome_r, String cnpj, String insc_esta, String nome_contato,
 			String cargo, String telefone, String telefone_tipo, String email, String email_tipo, String rua,
 			String numero, String complemento, String bairro, String cidade, String estado, String proximidade,
 			String cep, Categoria categoria) {
@@ -83,51 +82,12 @@ public class Fornecedor implements Serializable {
 	}
 
 
-
-
-
-
-
-
-
-	public String getEmail_tipo() {
-		return email_tipo;
-	}
-
-
-
-
-
-	public void setEmail_tipo(String email_tipo) {
-		this.email_tipo = email_tipo;
-	}
-
-
-
-
-
-	public String getComplemento() {
-		return complemento;
-	}
-
-
-
-
-
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
-
-
-
-
-
-	public long getId() {
+	public Integer getId() {
 		return id;
 	}
 
 
-	public void setId(long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -222,6 +182,16 @@ public class Fornecedor implements Serializable {
 	}
 
 
+	public String getEmail_tipo() {
+		return email_tipo;
+	}
+
+
+	public void setEmail_tipo(String email_tipo) {
+		this.email_tipo = email_tipo;
+	}
+
+
 	public String getRua() {
 		return rua;
 	}
@@ -239,6 +209,16 @@ public class Fornecedor implements Serializable {
 
 	public void setNumero(String numero) {
 		this.numero = numero;
+	}
+
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
 	}
 
 
@@ -319,7 +299,16 @@ public class Fornecedor implements Serializable {
 		Fornecedor other = (Fornecedor) obj;
 		return Objects.equals(id, other.id);
 	}
-	  
+
+
+
+
+
+
+
+
+
+
 	  
 	  
 

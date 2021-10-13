@@ -67,7 +67,7 @@ public class FornecedorController {
 	
 	
   @GetMapping("/fornecedor/{id}")
-  public ModelAndView merda(@PathVariable long id ) {
+  public ModelAndView merda(@PathVariable Integer id ) {
 	  Optional<Fornecedor> optional = this.fornecedorRepository.findById(id);
 	  Fornecedor fornecedor = optional.get();
 	  ModelAndView mv = new  ModelAndView("lojaklm/fornecedorDetalhes");

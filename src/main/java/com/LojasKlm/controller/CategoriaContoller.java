@@ -1,7 +1,11 @@
 package com.LojasKlm.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -34,6 +38,15 @@ public class CategoriaContoller {
 	 		return "redirect:/categorias";
 	 	}
 	  
+	   @GetMapping("/categoria/{id}/edit")
+	   public ModelAndView edit(@PathVariable Integer id) {
+		   Optional<Categoria> categoria = categoriaEpository.findById(id);
+		   ModelAndView mv = new ModelAndView("lojaklm/editCategoria");
+		   mv.addObject("categoria", categoria);
+		   return mv;
+	   }
+	   
+	   
 	
 	    	
 	

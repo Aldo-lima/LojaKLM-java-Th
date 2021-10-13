@@ -20,7 +20,7 @@ public class Categoria  implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private long id;
+	private Integer id;
 	private String nome;
 	
 	
@@ -32,35 +32,41 @@ public class Categoria  implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
-	public Categoria(long id, String nome) {
+	public Categoria(Integer id, String nome) {
 		super();
-		this.id = id ;
+		this.id = id;
 		this.nome = nome;
 	}
 
-
-
-	public long getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(long id) {
+
+	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+
+	public List<Fornecedor> getFornecedor() {
+		return fornecedor;
 	}
+
+	public void setFornecedor(List<Fornecedor> fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -70,9 +76,9 @@ public class Categoria  implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Categoria other = (Categoria) obj;
-		return id == other.id;
+		return Objects.equals(id, other.id);
 	}
+
 	
-	
-	
+
 }

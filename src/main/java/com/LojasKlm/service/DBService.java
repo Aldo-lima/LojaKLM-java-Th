@@ -38,14 +38,14 @@ public class DBService {
 		Categoria cat5 = new Categoria(5, "Cama Mesa e Banho");
 		Categoria cat6 = new Categoria(6, "Artigo Esportivos");
 		
-		Fornecedor forn1 = new Fornecedor( 1, null, "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", null, null, null, null, null, null, null, null, null, null, cat6);
-		Fornecedor forn2 = new Fornecedor(2,null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
-		Fornecedor forn3 = new Fornecedor(3, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat4);
-		Fornecedor forn4 = new Fornecedor(4, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat3);
-		Fornecedor forn5 = new Fornecedor(5, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat6);
-		Fornecedor forn6 = new Fornecedor(6, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat6);
-		Fornecedor forn7 = new Fornecedor(7, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat6);
-		Fornecedor forn8 = new Fornecedor(8, null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat6);
+		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", null, null, null, null, null, null, null, null, null, null, null, cat6);
+		Fornecedor forn2 = new Fornecedor(null, "nome", "nome_r", "cnpj","1245155" ,null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
+		Fornecedor forn3 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat4);
+		Fornecedor forn4 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat3);
+		Fornecedor forn5 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn6 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn7 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn8 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
 	
 		
 		Produto podu1 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
