@@ -8,14 +8,15 @@
 			<tr>
 				<th scope="col">Codigo</th>merda
 				<th scope="col">Nome</th>
-				<th scope="col">Ver Produto</th>
-				<th scope="col">Deletar</th>
+				<th scope="col">Descrição</th>
+				<th scope="col">Ver Detalhes</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr th:each="produto : ${produtos}">
 				<th scope="row"><span th:text="${produto.id}"></span></th>
 				<td><span th:text="${produto.name}"></td>
+				<td><span th:text="${produto.descricao}"></td>
 				<td><a  th:href="@{produto/{id}(id= ${produto.id})}">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 						class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -26,7 +27,7 @@
 					</svg>
                   </a>
 				</td>
-				<td>@mdo</td>
+				
 			</tr>
 
 

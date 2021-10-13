@@ -49,7 +49,7 @@
 				</div><br>
 				<div class="row">
 				   <div class="col">
-				     	<button type="submit" class="btn btn-outline-primary">Editar</button>
+				     	<a th:href="@{produto/{id}/edit(id= ${produto.id})}" type="submit" class="btn btn-outline-primary">Editar</a>
 						<a th:href="@{/produtos}"  type="button" class="btn btn-outline-warning">Cancelar</a>
 				   </div>
 				

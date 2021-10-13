@@ -76,7 +76,14 @@ public class Produto  implements Serializable{
 		}
 
 
-
+        public Produto toProduto(Produto produto) {
+        	produto.setName(this.name);
+        	produto.setUnidade_medida(this.Unidade_medida);
+        	produto.setPrice(this.price);
+        	produto.setDescricao(this.descricao);
+        	produto.setQuantidade_embalagem(this.quantidade_embalagem);
+        	return produto;
+        }
 
 		public Integer getId() {
 			return id;

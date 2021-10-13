@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.LojasKlm.models.Categoria;
 import com.LojasKlm.models.Fornecedor;
 import com.LojasKlm.repositores.CategoriaRepositoes;
 import com.LojasKlm.repositores.FornecedorRepository;
@@ -75,7 +76,14 @@ public class FornecedorController {
 	  return mv;
   }
 
-
+  @GetMapping("/fornecedor/fornecedor/{id}/edit")
+  public ModelAndView edit(@PathVariable Integer id) {
+	   Optional<Fornecedor> fornecedor = fornecedorRepository.findById(id);
+	   ModelAndView mv = new ModelAndView("lojaklm/editFornecedor");
+	   mv.addObject("fornecedor", fornecedor);
+	   return mv;
+  }
+  
 	
     
 	

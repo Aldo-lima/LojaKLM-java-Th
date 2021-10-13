@@ -155,7 +155,7 @@
 					
 			</div>
 			<div class="col-4"> 
-				<button type="submit" class="btn btn-outline-primary">Editar</button>
+				<a   th:href="@{fornecedor/{id}/edit(id= ${fornecedor.id})}"  type="submit" class="btn btn-outline-primary">Editar</a>
 				<a th:href="@{/fornecedores}" type="button" class="btn btn-outline-warning">Cancelar</a>
            </div>
 		</div><br>
