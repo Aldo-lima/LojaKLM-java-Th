@@ -38,7 +38,7 @@ public class DBService {
 		Categoria cat5 = new Categoria(5, "Cama Mesa e Banho");
 		Categoria cat6 = new Categoria(6, "Artigo Esportivos");
 		
-		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", null, null, null, null, null, null, null, null, null, null, null, cat6);
+		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", "Particular", "José@gmail.com", "comercial", "Camelia", "180", "fundos", "Jd Matão", "Sumaré", "São Paulo", "padaria", "13185560", cat6);
 		Fornecedor forn2 = new Fornecedor(null, "nome", "nome_r", "cnpj","1245155" ,null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
 		Fornecedor forn3 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat4);
 		Fornecedor forn4 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat3);

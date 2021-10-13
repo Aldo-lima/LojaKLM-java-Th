@@ -2,10 +2,13 @@ package com.LojasKlm.controller;
 
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -84,6 +87,16 @@ public class FornecedorController {
 	   return mv;
   }
   
+  
+  
+  @PostMapping("/cadastrarFornecedor/{id}")
+  public ModelAndView update(@PathVariable Integer id, @Valid Fornecedor fornecedorVindo) {
+	  Optional<Fornecedor>opitional = this.fornecedorRepository.findById(id);
+	   Fornecedor fornecedor = fornecedorVindo.toFornecedor(opitional.get());
+	    this.fornecedorRepository.save(fornecedor);
+	   ModelAndView mv = new ModelAndView("redirect:/fornecedores");
+	   return mv;
+  }
 	
     
 	

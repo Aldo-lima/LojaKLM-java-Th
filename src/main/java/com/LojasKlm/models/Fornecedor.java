@@ -81,6 +81,28 @@ public class Fornecedor implements Serializable {
 		this.categoria = categoria;
 	}
 
+	public Fornecedor  toFornecedor( Fornecedor fornecedor) {
+		fornecedor.setNome(this.nome);
+		fornecedor.setNome_r(this.nome_r);
+		fornecedor.setCnpj(this.cnpj);
+		fornecedor.setInsc_esta(this.insc_esta);
+		fornecedor.setNome_contato(this.nome_contato);
+		fornecedor.setCargo(this.cargo);
+		fornecedor.setTelefone(this.telefone);
+		fornecedor.setEmail(this.email);
+		fornecedor.setEmail_tipo(this.email_tipo);
+		fornecedor.setEmail_tipo(this.email_tipo);
+		fornecedor.setRua(this.rua);
+		fornecedor.setNumero(this.numero);
+		fornecedor.setComplemento(this.complemento);
+		fornecedor.setBairro(this.bairro);
+		fornecedor.setCidade(this.cidade);
+		fornecedor.setEstado(this.estado);
+		fornecedor.setProximidade(this.proximidade);
+		fornecedor.setCep(this.cep);
+										
+		return fornecedor;
+	}
 
 	public Integer getId() {
 		return id;
