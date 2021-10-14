@@ -1,4 +1,4 @@
-Projeto destinado a montagem de um portfólio consiste em uma loja virtual sendo dividida em 5 módulos:
+Projeto destinado a montagem de um portfólio consiste em uma loja virtual sendo dividida em 5 módulos:<br>
 1 - Modulo de cadastro de produto e fornecedores.
 2 - Modulo de controle de usuário.
 3 - Modulo de controle de estoque.
