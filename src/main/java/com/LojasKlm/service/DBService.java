@@ -35,14 +35,14 @@ public class DBService {
 		Categoria cat5 = new Categoria(5, "Cama Mesa e Banho");
 		Categoria cat6 = new Categoria(6, "Artigo Esportivos");
 		
-		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", "Particular", "José@gmail.com", "comercial", "Camelia", "180", "fundos", "Jd Matão", "Sumaré", "São Paulo", "padaria", "13185560", cat6);
-		Fornecedor forn2 = new Fornecedor(null, "Anastasia", "Anastasia Comercio de Alimentos S/A", "cnpj","1245155" ,null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
-		Fornecedor forn3 = new Fornecedor( null, "Faber Csatello", "Faber Castello Idustria e comercio", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat4);
-		Fornecedor forn4 = new Fornecedor( null, "Brasileiras", "Lojas brasileiras", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat3);
-		Fornecedor forn5 = new Fornecedor( null, "Casa America ", "José da Silva Comercio de  S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn6 = new Fornecedor(null, "Mercado Tambiri", "Tanburi Comercio de Alimentos S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn7 = new Fornecedor(null, "DB Brinqudos", "DB industria e comercio de brin quedos", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn8 = new Fornecedor(null, "Casas Almeida", "Aumeida comercios S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "4-1.455.555/5555-55", "1245145112", "Gilberto Gomes", "complador", "19 88412457", "Particular", "José@gmail.com", "comercial", "Camelia", "180", "fundos", "Jd Matão", "Sumaré", "São Paulo", "padaria", "13.185-560", cat6);
+		Fornecedor forn2 = new Fornecedor(null, "Anastasia", "Anastasia Comercio de Alimentos S/A", "4-1.455.555/0001-55","124.12451/58" ,null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat5);
+		Fornecedor forn3 = new Fornecedor( null, "Faber Csatello", "Faber Castello Idustria e comercio", "4-1.455.555/0001-55", "124.12451/58", null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat4);
+		Fornecedor forn4 = new Fornecedor( null, "Brasileiras", "Lojas brasileiras", "4-1.455.555/0001-55", null, null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat3);
+		Fornecedor forn5 = new Fornecedor( null, "Casa America ", "José da Silva Comercio de  S/A", "4-1.455.555/0001-55", null, null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat6);
+		Fornecedor forn6 = new Fornecedor(null, "Mercado Tambiri", "Tanburi Comercio de Alimentos S/A", "4-1.455.555/0001-55", null, null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat6);
+		Fornecedor forn7 = new Fornecedor(null, "DB Brinqudos", "DB industria e comercio de brin quedos", "4-1.455.555/0001-55", null, null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat6);
+		Fornecedor forn8 = new Fornecedor(null, "Casas Almeida", "Aumeida comercios S/A", "4-1.455.555/0001-55", null, null, null, null, null, null, null, null, null, null, null, null, null, null,"13.185-560", cat6);
 	
 		
 		Produto podu1 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
