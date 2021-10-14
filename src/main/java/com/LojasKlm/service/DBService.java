@@ -14,9 +14,6 @@ import com.LojasKlm.repositores.ProdutoRepository;
 
 
 
-
-
-
 @Service
 public class DBService {
 
@@ -39,25 +36,25 @@ public class DBService {
 		Categoria cat6 = new Categoria(6, "Artigo Esportivos");
 		
 		Fornecedor forn1 = new Fornecedor(null , "ProEspost", "Proesport Comercio de Artigo Esportivos S/A", "14521478451", "1245145112", "Gilberto Gomes", "complador", "19 88412457", "Particular", "José@gmail.com", "comercial", "Camelia", "180", "fundos", "Jd Matão", "Sumaré", "São Paulo", "padaria", "13185560", cat6);
-		Fornecedor forn2 = new Fornecedor(null, "nome", "nome_r", "cnpj","1245155" ,null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
-		Fornecedor forn3 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat4);
-		Fornecedor forn4 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat3);
-		Fornecedor forn5 = new Fornecedor( null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn6 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn7 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
-		Fornecedor forn8 = new Fornecedor(null, "Faber Castel", "845715542-1/0001", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn2 = new Fornecedor(null, "Anastasia", "Anastasia Comercio de Alimentos S/A", "cnpj","1245155" ,null, null, null, null, null, null, null, null, null, null, null, null, null, null, cat5);
+		Fornecedor forn3 = new Fornecedor( null, "Faber Csatello", "Faber Castello Idustria e comercio", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat4);
+		Fornecedor forn4 = new Fornecedor( null, "Brasileiras", "Lojas brasileiras", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat3);
+		Fornecedor forn5 = new Fornecedor( null, "Casa America ", "José da Silva Comercio de  S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn6 = new Fornecedor(null, "Mercado Tambiri", "Tanburi Comercio de Alimentos S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn7 = new Fornecedor(null, "DB Brinqudos", "DB industria e comercio de brin quedos", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
+		Fornecedor forn8 = new Fornecedor(null, "Casas Almeida", "Aumeida comercios S/A", "14521478451", null, null, null, null, null, null, null, null, null, null, null, null, null, null,null, cat6);
 	
 		
 		Produto podu1 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu2 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu3 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu4 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu5 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu6 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu7 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu8 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu9 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
-		Produto podu10 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
+		Produto podu2 = new Produto(null, "Boneca Lili","unidade",1, 200.50," Para crianças axima de 5 anos",forn4);
+		Produto podu3 = new Produto(null, "Cadeno Tlibra","unidade",1, 20.50,"Caderno 200 folhas ",forn4);
+		Produto podu4 = new Produto(null, "Caneca Tematizadas","unidade",1, 2.50,"Caneca com temas",forn4);
+		Produto podu5 = new Produto(null, "Bones","unidade",1, 2.50,"bone nautico",forn4);
+		Produto podu6 = new Produto(null, "Caneta Bic","unidade",10, 23.50,"Caneta Bic Cristal Cor Azul",forn4);
+		Produto podu7 = new Produto(null, "Robo de Brinquedo ","unidade",1, 40.50," Brinquedo com Pilha",forn4);
+		Produto podu8 = new Produto(null, "Toalha de Mesa","unidade",1, 2.50,"Toalha de mesa Estampadas",forn4);
+		Produto podu9 = new Produto(null, "Tv 20Polegadas","unidade",1, 2400.50,"Aparelho  de TV LG",forn4);
+		Produto podu10 = new Produto(null, "Sabão Em Pó Omo","unidade",1, 2.50,"Embalagem de um Kg",forn4);
 		Produto podu11 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
 		Produto podu12 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
 		Produto podu13 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
@@ -69,10 +66,7 @@ public class DBService {
 		Produto podu19 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
 		Produto podu20 = new Produto(null, "sabonete","unidade",1, 2.50,"saboneta de lavanda",forn4);
 	
-		
-		
-		
-		
+						
 				
 		
 		categoriaEpository.saveAll(Arrays.asList(cat1,cat2,cat3,cat4,cat5, cat6));

@@ -13,8 +13,8 @@
 					<div class="col-3">
 						<div class="mb-3">
 							<label for="disabledSelect" class="form-label">Fornecedor</label>
-							<select id="disabledSelect" class="form-select">
-								<option>Disabled select</option>
+							<select id="disabledSelect" class="form-select" name="fornecedor">
+								<option th:each="fornecedor: ${fornecedores}" th:value="${fornecedor.id}" th:text=${fornecedor.nome} >Disabled select</option>
 							</select>
 						</div>
 					</div>

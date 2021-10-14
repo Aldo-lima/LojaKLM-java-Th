@@ -36,26 +36,26 @@ public class FornecedorController {
 
 	}
 
-	/*
-	 * @RequestMapping(value="cadastrarFornecedor", method=RequestMethod.GET) public
-	 * ModelAndView listarCategoria() { ModelAndView mv = new
-	 * ModelAndView("lojaklm/formFornecedor"); Iterable<Categoria> categorias
-	 * =categoriaEpository.findAll(); mv.addObject("categorias", categorias); return
-	 * mv;
-	 * 
-	 * 
-	 * }
-	 */
-
+	
+	 @RequestMapping(value="cadastrarFornecedor", method=RequestMethod.GET) 
+	 public  ModelAndView listarCategoria() {
+	 ModelAndView mv = new  ModelAndView("lojaklm/formFornecedor");
+	 Iterable<Categoria> categorias  =categoriaEpository.findAll();
+	 mv.addObject("categorias", categorias);
+	 return  mv;
+	 
+	 }
+	 
+/*
 	@RequestMapping(value = "cadastrarFornecedor", method = RequestMethod.GET)
 	public ModelAndView listarCategoria() {
 		ModelAndView mv = new ModelAndView("lojaklm/formFornecedor");
 		return mv;
 
-	}
+	}*/
 
-	@RequestMapping(value = "cadastrarFornecedor", method = RequestMethod.POST)
-	public String formpost(Fornecedor fornecedor) {
+	@PostMapping(value = "cadastrarFornecedor")
+	public String create(Fornecedor fornecedor) {
 		fornecedorRepository.save(fornecedor);
 		return "redirect:/fornecedores";
 	}

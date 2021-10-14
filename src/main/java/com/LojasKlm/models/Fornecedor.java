@@ -13,7 +13,18 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Fornecedor implements Serializable {
-	   /**
+	   @Override
+	public String toString() {
+		return "Fornecedor [id=" + id + ", nome=" + nome + ", nome_r=" + nome_r + ", cnpj=" + cnpj + ", insc_esta="
+				+ insc_esta + ", nome_contato=" + nome_contato + ", cargo=" + cargo + ", telefone=" + telefone
+				+ ", telefone_tipo=" + telefone_tipo + ", email=" + email + ", email_tipo=" + email_tipo + ", rua="
+				+ rua + ", numero=" + numero + ", complemento=" + complemento + ", bairro=" + bairro + ", cidade="
+				+ cidade + ", estado=" + estado + ", proximidade=" + proximidade + ", cep=" + cep + ", categoria="
+				+ categoria + "]";
+	}
+
+
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
